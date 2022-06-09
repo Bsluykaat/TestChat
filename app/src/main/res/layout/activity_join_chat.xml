@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".functionalActivities.JoinChatActivity">
+
+    <EditText
+        android:id="@+id/user_name_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/nickname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/user_id_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        android:hint="@string/id"
+        app:layout_constraintTop_toBottomOf="@id/user_name_editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/add_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="19dp"
+        android:text="@string/ADDstring"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_id_editText" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/CANCELstring"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_id_editText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
